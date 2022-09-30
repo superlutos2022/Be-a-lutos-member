@@ -6,7 +6,7 @@
     width: 100%;
 
     display: flex;
-    gap: 32%;
+    gap: 500px;
       }
 
   .grow1 { 
@@ -15,8 +15,8 @@
 
   .grow2 { 
       flex-grow: 1; 
-      box-shadow: 10px 10px 12px 4px rgba(38,38,38,0.61);
       text-align: center;
+      box-shadow: 15px -17px 37px 4px rgba(0,0,0,0.76);
   }
   
   .sumit{
@@ -59,7 +59,7 @@
       <br><br>
       <section class="layout">
         <div class="grow1"></div>
-        <div class="grow2">  <label>Birthday</label><br><input type="text " height="20%" width="20%" value="dd//mm//yyyy"></div>
+        <div class="grow2">  <label>Birthday (month and year)</label><br><input type="month"></div>
         <div class="grow1"> </div>
       </section>
       <br><br>
@@ -71,7 +71,7 @@
       <br><br>
       <section class="layout">
         <div class="grow1"></div>
-        <div class="grow2"> <label>postal code</label><br><input type="text"></div>
+        <div class="grow2"> <label>postal code</label><br><input type="number" maxlength="5"></div>
         <div class="grow1"> </div>
       </section>
       <br><br>
@@ -83,23 +83,36 @@
       <br><br>
       <section class="layout">
         <div class="grow1"></div>
-        <div class="grow2">  <label>Street and House number</label><br><input type="text"></div>
+        <div class="grow2">  <label>Street and House number</label><br>
+          <input type="textarea" rows="5" cols="10"></div>
         <div class="grow1"> </div>
       </section>
       <br><br>
       <section class="layout">
         <div class="grow1"></div>
-        <div class="grow2"><label>Telefon number</label><br><input type="text"></div>
-        <div class="grow1"> </div>
-      </section>
-      <br><br>
-      <section class="layout">
-        <div class="grow1"></div>
-        <div class="grow1"><div class="sumit"><input type="submit" value="Be now a lutos memeber"></div>
+        <div class="grow2"><label>Telefon number</label><br><input type="tel"></div>
         <div class="grow1"> </div>
       </section>
       <br><br>
       
+      <section class="layout">
+        <div class="grow1"></div>
+        <div class="grow2"><label>geschlecht</label> <br>
+           <input type="radio"  name="fav_language" value="Mänlich"> <label for="Mänlich">Mänlich</label><br>
+           <input type="radio"  name="fav_language" value="Weiblich">
+           <label for="Weiblich">Weiblich</label><br></div>
+        <div class="grow1"> </div>
+      </section>
+      
+      <br><br>
+      
+      <section class="layout">
+        <div class="grow1"></div>
+        <div class="grow1"> </div>
+        <div class="grow1"><input type="reset" onclick="alert('ihre antwort wurde erflgreich versendet!!')" value="Be now a lutos member"> </div>
+      </section>
+
+
 </body>
 </html>
 
